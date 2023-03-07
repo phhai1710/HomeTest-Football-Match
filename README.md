@@ -1,6 +1,6 @@
 # Football Matches App MVVM with Combine + CoreData
 
-App with a single page that downloads a list of matches and teams from APIs https://jmde6xvjr4.execute-api.us-east-1.amazonaws.com/teams and https://jmde6xvjr4.execute-api.us-east-1.amazonaws.com/teams/matches.
+App with a single page that loads a list of matches and teams. The user can view previous matches and watch highlights as well as view upcoming matches with the reminder schedule ability.
 
 Implementing MVVM concept with Combine and using CoreData for offline usage. 
 
@@ -43,6 +43,7 @@ This project uses some external frameworks to make development easier:
 - JGProgressHUD: An elegant and simple progress HUD 
 
 ## TODO:
+Due to the limited time, the project cannot be completed completely. There are still some practices that can be applied:
 * Implementing Coordinator for MVVM-C
 * Detaching Combine from Domain. Domain should be pure Closure and there will be a convertion to transform Closure to Publisher
 * Applying Service Locator pattern
@@ -50,4 +51,4 @@ This project uses some external frameworks to make development easier:
 * Splitting CalendarManager by CalendarServiceProtocol and CalendarService then move to Domain and Data layer
 * Should have a CoreData table to store scheduled event in calendar. It will be more guaranteed to delete sheduled event as well as to know which matches has been scheduled.
 * Finishing UnitTest for remaining classes
-* TODO in code
+* Fixing TODOs in code
